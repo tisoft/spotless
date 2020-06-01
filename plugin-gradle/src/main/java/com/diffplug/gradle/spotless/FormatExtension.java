@@ -55,8 +55,8 @@ import groovy.lang.Closure;
 public class FormatExtension {
 	final SpotlessExtension ext;
 
-	public FormatExtension(SpotlessExtension root) {
-		this.ext = Objects.requireNonNull(root);
+	public FormatExtension(SpotlessExtension ext) {
+		this.ext = Objects.requireNonNull(ext);
 	}
 
 	protected Provisioner provisioner() {
@@ -81,7 +81,7 @@ public class FormatExtension {
 	/** Enables paddedCell mode. @see <a href="https://github.com/diffplug/spotless/blob/master/PADDEDCELL.md">Padded cell</a> */
 	@Deprecated
 	public void paddedCell(boolean paddedCell) {
-		ext.project.getLogger().warn("PaddedCell is now always on, and cannot be turned off.");
+		ext.project.getLogger().warn("Spotless!  paddedCell is now always on, and cannot be turned off.  Search for `paddedCell(` and remove.");
 	}
 
 	LineEnding lineEndings;
