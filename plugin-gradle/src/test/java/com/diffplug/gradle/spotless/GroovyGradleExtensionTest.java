@@ -21,7 +21,7 @@ import org.junit.Test;
 
 import com.diffplug.common.base.StringPrinter;
 
-public class GroovyGradleExtensionTest extends GradleIntegrationTest {
+public class GroovyGradleExtensionTest extends GradleIntegrationHarness {
 	private static final String HEADER = "//My tests header";
 
 	@Test

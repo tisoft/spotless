@@ -25,7 +25,7 @@ import org.junit.Test;
 
 import com.diffplug.spotless.JreVersion;
 
-public class KotlinExtensionTest extends GradleIntegrationTest {
+public class KotlinExtensionTest extends GradleIntegrationHarness {
 	private static final String HEADER = "// License Header";
 	private static final String HEADER_WITH_YEAR = "// License Header $YEAR";
 

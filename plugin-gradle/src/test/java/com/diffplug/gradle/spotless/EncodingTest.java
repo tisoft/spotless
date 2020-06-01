@@ -19,7 +19,7 @@ import java.nio.charset.Charset;
 
 import org.junit.Test;
 
-public class EncodingTest extends GradleIntegrationTest {
+public class EncodingTest extends GradleIntegrationHarness {
 	@Test
 	public void defaultIsUtf8() throws Exception {
 		setFile("build.gradle").toLines(

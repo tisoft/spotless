@@ -23,7 +23,7 @@ import org.junit.experimental.categories.Category;
 import com.diffplug.spotless.category.NpmTest;
 
 @Category(NpmTest.class)
-public class PrettierIntegrationTest extends GradleIntegrationTest {
+public class PrettierIntegrationTest extends GradleIntegrationHarness {
 	@Test
 	public void useInlineConfig() throws IOException {
 		setFile("build.gradle").toLines(

@@ -22,7 +22,7 @@ import org.junit.Test;
 
 import com.diffplug.spotless.JreVersion;
 
-public class RegisterDependenciesTaskTest extends GradleIntegrationTest {
+public class RegisterDependenciesTaskTest extends GradleIntegrationHarness {
 	@Test
 	public void registerDependencies() throws IOException {
 		setFile("settings.gradle")

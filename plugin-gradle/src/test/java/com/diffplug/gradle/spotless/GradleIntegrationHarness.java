@@ -37,7 +37,7 @@ import com.diffplug.spotless.JreVersion;
 import com.diffplug.spotless.LineEnding;
 import com.diffplug.spotless.ResourceHarness;
 
-public class GradleIntegrationTest extends ResourceHarness {
+public class GradleIntegrationHarness extends ResourceHarness {
 	/**
 	 * Each test gets its own temp folder, and we create a gradle
 	 * build there and run it.

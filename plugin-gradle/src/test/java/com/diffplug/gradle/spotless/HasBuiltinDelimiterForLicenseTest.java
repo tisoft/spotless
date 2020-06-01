@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class HasBuiltinDelimiterForLicenseTest extends GradleIntegrationTest {
+public class HasBuiltinDelimiterForLicenseTest extends GradleIntegrationHarness {
 
 	@Test
 	public void testWithCommonInterfaceForConfiguringLicences() throws IOException {

@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class CustomLazyGroovyTest extends GradleIntegrationTest {
+public class CustomLazyGroovyTest extends GradleIntegrationHarness {
 	@Test
 	public void integration() throws IOException {
 		setFile("build.gradle").toLines(

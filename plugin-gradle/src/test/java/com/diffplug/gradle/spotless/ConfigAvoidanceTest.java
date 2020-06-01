@@ -21,7 +21,7 @@ import org.assertj.core.api.Assertions;
 import org.gradle.testkit.runner.GradleRunner;
 import org.junit.Test;
 
-public class ConfigAvoidanceTest extends GradleIntegrationTest {
+public class ConfigAvoidanceTest extends GradleIntegrationHarness {
 	protected final GradleRunner gradleRunnerConfigAvoidance() throws IOException {
 		return gradleRunner().withGradleVersion(SpotlessPluginLegacy.CONFIG_AVOIDANCE_INTRODUCED.getVersion());
 	}

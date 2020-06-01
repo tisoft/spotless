@@ -18,7 +18,7 @@ package com.diffplug.gradle.spotless;
 import org.eclipse.jgit.api.Git;
 import org.junit.Test;
 
-public class RatchetFromTest extends GradleIntegrationTest {
+public class RatchetFromTest extends GradleIntegrationHarness {
 	@Test
 	public void singleProjectExhaustive() throws Exception {
 		Git git = Git.init().setDirectory(rootFolder()).call();

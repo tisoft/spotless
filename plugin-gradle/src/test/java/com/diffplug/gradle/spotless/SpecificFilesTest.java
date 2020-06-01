@@ -25,7 +25,7 @@ import org.junit.Test;
 
 import com.diffplug.common.base.StandardSystemProperty;
 
-public class SpecificFilesTest extends GradleIntegrationTest {
+public class SpecificFilesTest extends GradleIntegrationHarness {
 	private static boolean isWindows() {
 		return StandardSystemProperty.OS_NAME.value().toLowerCase(Locale.US).contains("win");
 	}

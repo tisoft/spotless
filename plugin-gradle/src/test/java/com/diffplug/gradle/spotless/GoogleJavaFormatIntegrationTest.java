@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class GoogleJavaFormatIntegrationTest extends GradleIntegrationTest {
+public class GoogleJavaFormatIntegrationTest extends GradleIntegrationHarness {
 	@Test
 	public void integration() throws IOException {
 		setFile("build.gradle").toLines(

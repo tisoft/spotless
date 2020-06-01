@@ -21,7 +21,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class GroovyExtensionTest extends GradleIntegrationTest {
+public class GroovyExtensionTest extends GradleIntegrationHarness {
 
 	private static final String HEADER = "//My tests header";
 

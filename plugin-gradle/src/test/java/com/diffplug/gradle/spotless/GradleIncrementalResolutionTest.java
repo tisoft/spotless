@@ -28,7 +28,7 @@ import org.junit.Test;
 import com.diffplug.common.base.Errors;
 import com.diffplug.common.base.StringPrinter;
 
-public class GradleIncrementalResolutionTest extends GradleIntegrationTest {
+public class GradleIncrementalResolutionTest extends GradleIntegrationHarness {
 	@Test
 	public void failureDoesntTriggerAll() throws IOException {
 		setFile("build.gradle").toLines(

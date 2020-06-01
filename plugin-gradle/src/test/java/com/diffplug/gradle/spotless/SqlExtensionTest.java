@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class SqlExtensionTest extends GradleIntegrationTest {
+public class SqlExtensionTest extends GradleIntegrationHarness {
 
 	@Test
 	public void should_format_sql_with_default_configuration() throws IOException {

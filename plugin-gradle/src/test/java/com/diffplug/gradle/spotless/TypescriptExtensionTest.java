@@ -23,7 +23,7 @@ import org.junit.experimental.categories.Category;
 import com.diffplug.spotless.category.NpmTest;
 
 @Category(NpmTest.class)
-public class TypescriptExtensionTest extends GradleIntegrationTest {
+public class TypescriptExtensionTest extends GradleIntegrationHarness {
 	@Test
 	public void allowToSpecifyFormatterVersion() throws IOException {
 		setFile("build.gradle").toLines(

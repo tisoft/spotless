@@ -22,7 +22,7 @@ import org.gradle.testkit.runner.GradleRunner;
 import org.junit.Test;
 
 /** Reproduces https://github.com/diffplug/spotless/issues/506 */
-public class MultiProjectAfterEvaluate extends GradleIntegrationTest {
+public class MultiProjectAfterEvaluate extends GradleIntegrationHarness {
 	@Test
 	public void failureDoesntTriggerAll() throws IOException {
 		setFile("settings.gradle").toLines("include 'sub'");

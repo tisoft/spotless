@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class BumpThisNumberIfACustomStepChangesTest extends GradleIntegrationTest {
+public class BumpThisNumberIfACustomStepChangesTest extends GradleIntegrationHarness {
 
 	private void writeBuildFile(String toInsert) throws IOException {
 		setFile("build.gradle").toLines(

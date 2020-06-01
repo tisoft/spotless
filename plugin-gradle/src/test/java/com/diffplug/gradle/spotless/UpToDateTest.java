@@ -22,7 +22,7 @@ import org.gradle.testkit.runner.BuildResult;
 import org.gradle.testkit.runner.TaskOutcome;
 import org.junit.Test;
 
-public class UpToDateTest extends GradleIntegrationTest {
+public class UpToDateTest extends GradleIntegrationHarness {
 	/** Requires that README be lowercase. */
 	private void writeBuildFile() throws IOException {
 		setFile("build.gradle").toLines(

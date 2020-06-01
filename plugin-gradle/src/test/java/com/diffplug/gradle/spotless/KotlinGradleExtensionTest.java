@@ -24,7 +24,7 @@ import org.junit.Test;
 
 import com.diffplug.spotless.JreVersion;
 
-public class KotlinGradleExtensionTest extends GradleIntegrationTest {
+public class KotlinGradleExtensionTest extends GradleIntegrationHarness {
 	@Test
 	public void integration() throws IOException {
 		testInDirectory(null);
