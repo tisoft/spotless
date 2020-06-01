@@ -36,8 +36,8 @@ import com.diffplug.spotless.Provisioner;
 public class GradleProvisioner {
 	private GradleProvisioner() {}
 
+	@Deprecated
 	public static Provisioner fromProject(Project project) {
-		// TODO: this method is not necessary - we could remove it entirely for a small speedup
 		return project.getPlugins().apply(SpotlessPlugin.class).getExtension().registerDependenciesTask.rootProvisioner;
 	}
 

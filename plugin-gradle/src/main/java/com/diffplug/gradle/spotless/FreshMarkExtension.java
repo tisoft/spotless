@@ -33,15 +33,15 @@ public class FreshMarkExtension extends FormatExtension {
 
 	public final List<Action<Map<String, Object>>> propertyActions = new ArrayList<>();
 
-	public FreshMarkExtension(SpotlessExtension root) {
-		super(root);
+	public FreshMarkExtension(SpotlessExtension ext) {
+		super(ext);
 		addStep(FreshMarkStep.create(() -> {
 			Map<String, Object> map = new HashMap<>();
 			for (Action<Map<String, Object>> action : propertyActions) {
 				action.execute(map);
 			}
 			return map;
-		}, GradleProvisioner.fromProject(getProject())));
+		}, provisioner()));
 	}
 
 	public void properties(Action<Map<String, Object>> action) {
