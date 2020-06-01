@@ -36,8 +36,8 @@ public class TypescriptExtension extends FormatExtension {
 
 	static final String NAME = "typescript";
 
-	public TypescriptExtension(SpotlessExtension root) {
-		super(root);
+	public TypescriptExtension(SpotlessExtension rootExtension) {
+		super(rootExtension);
 	}
 
 	/** Uses the default version of typescript-format. */
