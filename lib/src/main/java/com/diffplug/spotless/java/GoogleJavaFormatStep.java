@@ -138,7 +138,6 @@ public class GoogleJavaFormatStep {
 			};
 		}
 
-		@SuppressWarnings({"unchecked", "rawtypes"})
 		FormatterFunc createRemoveUnusedImportsOnly() throws Exception {
 			ClassLoader classLoader = jarState.getClassLoader();
 
@@ -161,6 +160,7 @@ public class GoogleJavaFormatStep {
 
 			Function<String, String> removeUnused;
 			if (removeJavadocOnlyClass != null) {
+				@SuppressWarnings({"unchecked", "rawtypes"})
 				Object removeJavadocConstant = Enum.valueOf((Class<Enum>) removeJavadocOnlyClass, REMOVE_UNUSED_IMPORT_JavadocOnlyImports_Keep);
 				Method removeUnusedMethod = removeUnusedClass.getMethod(REMOVE_UNUSED_METHOD, String.class, removeJavadocOnlyClass);
 				removeUnused = (x) -> (String) removeUnusedMethod.invoke(null, x, removeJavadocConstant);
