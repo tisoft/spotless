@@ -17,7 +17,7 @@ package com.diffplug.spotless.maven;
 
 import org.junit.Test;
 
-public class MultipleFormatsTest extends MavenIntegrationTest {
+public class MultipleFormatsTest extends MavenIntegrationHarness {
 
 	@Test
 	public void testMultipleFormatsWithDifferentIncludes() throws Exception {

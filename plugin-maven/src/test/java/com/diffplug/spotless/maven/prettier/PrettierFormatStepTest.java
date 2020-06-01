@@ -23,11 +23,11 @@ import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
 import com.diffplug.spotless.category.NpmTest;
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 import com.diffplug.spotless.maven.MavenRunner;
 
 @Category(NpmTest.class)
-public class PrettierFormatStepTest extends MavenIntegrationTest {
+public class PrettierFormatStepTest extends MavenIntegrationHarness {
 
 	private void run(String kind, String suffix) throws IOException, InterruptedException {
 		String configPath = ".prettierrc.yml";

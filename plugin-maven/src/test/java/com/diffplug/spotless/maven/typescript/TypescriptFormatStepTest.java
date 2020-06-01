@@ -23,11 +23,11 @@ import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
 import com.diffplug.spotless.category.NpmTest;
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 import com.diffplug.spotless.maven.MavenRunner;
 
 @Category(NpmTest.class)
-public class TypescriptFormatStepTest extends MavenIntegrationTest {
+public class TypescriptFormatStepTest extends MavenIntegrationHarness {
 	private void run(String kind) throws IOException, InterruptedException {
 		String path = "src/main/typescript/test.ts";
 		setFile(path).toResource("npm/tsfmt/" + kind + "/" + kind + ".dirty");

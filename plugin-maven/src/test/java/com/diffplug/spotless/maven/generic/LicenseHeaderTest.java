@@ -17,9 +17,9 @@ package com.diffplug.spotless.maven.generic;
 
 import org.junit.Test;
 
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 
-public class LicenseHeaderTest extends MavenIntegrationTest {
+public class LicenseHeaderTest extends MavenIntegrationHarness {
 	private static final String KEY_LICENSE = "license/TestLicense";
 	private static final String KOTLIN_LICENSE_HEADER = "// Hello, I'm Kotlin license header";
 

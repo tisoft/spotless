@@ -15,11 +15,11 @@
  */
 package com.diffplug.spotless.maven;
 
-import static com.diffplug.spotless.maven.MavenIntegrationTest.SubProjectFile.file;
+import static com.diffplug.spotless.maven.MavenIntegrationHarness.SubProjectFile.file;
 
 import org.junit.Test;
 
-public class MultiModuleProjectTest extends MavenIntegrationTest {
+public class MultiModuleProjectTest extends MavenIntegrationHarness {
 
 	@Test
 	public void testConfigurationDependency() throws Exception {

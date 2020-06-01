@@ -17,9 +17,9 @@ package com.diffplug.spotless.maven.generic;
 
 import org.junit.Test;
 
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 
-public class ReplaceRegexTest extends MavenIntegrationTest {
+public class ReplaceRegexTest extends MavenIntegrationHarness {
 
 	@Test
 	public void fromContent() throws Exception {

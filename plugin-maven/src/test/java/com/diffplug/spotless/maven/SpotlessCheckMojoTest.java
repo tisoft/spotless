@@ -21,7 +21,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class SpotlessCheckMojoTest extends MavenIntegrationTest {
+public class SpotlessCheckMojoTest extends MavenIntegrationHarness {
 
 	private static final String UNFORMATTED_FILE = "license/MissingLicense.test";
 	private static final String FORMATTED_FILE = "license/HasLicense.test";

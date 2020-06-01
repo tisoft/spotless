@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class IncludesExcludesTest extends MavenIntegrationTest {
+public class IncludesExcludesTest extends MavenIntegrationHarness {
 
 	private static final String JAVA_FORMATTED = "java/eclipse/JavaCodeFormatted.test";
 	private static final String JAVA_UNFORMATTED = "java/eclipse/JavaCodeUnformatted.test";

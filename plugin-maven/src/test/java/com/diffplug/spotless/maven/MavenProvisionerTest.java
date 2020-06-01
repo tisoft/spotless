@@ -17,7 +17,7 @@ package com.diffplug.spotless.maven;
 
 import org.junit.Test;
 
-public class MavenProvisionerTest extends MavenIntegrationTest {
+public class MavenProvisionerTest extends MavenIntegrationHarness {
 
 	@Test
 	public void testMultipleDependenciesExcludingTransitives() throws Exception {

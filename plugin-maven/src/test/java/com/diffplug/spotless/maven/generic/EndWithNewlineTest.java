@@ -17,9 +17,9 @@ package com.diffplug.spotless.maven.generic;
 
 import org.junit.Test;
 
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 
-public class EndWithNewlineTest extends MavenIntegrationTest {
+public class EndWithNewlineTest extends MavenIntegrationHarness {
 
 	@Test
 	public void fromContent() throws Exception {

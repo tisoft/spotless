@@ -17,9 +17,9 @@ package com.diffplug.spotless.maven.java;
 
 import org.junit.Test;
 
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 
-public class GoogleJavaFormatTest extends MavenIntegrationTest {
+public class GoogleJavaFormatTest extends MavenIntegrationHarness {
 	@Test
 	public void specificVersionDefaultStyle() throws Exception {
 		writePomWithJavaSteps(

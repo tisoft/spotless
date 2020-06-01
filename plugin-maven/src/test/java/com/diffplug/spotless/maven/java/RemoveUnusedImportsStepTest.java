@@ -17,9 +17,9 @@ package com.diffplug.spotless.maven.java;
 
 import org.junit.Test;
 
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 
-public class RemoveUnusedImportsStepTest extends MavenIntegrationTest {
+public class RemoveUnusedImportsStepTest extends MavenIntegrationHarness {
 
 	@Test
 	public void testRemoveUnusedInports() throws Exception {

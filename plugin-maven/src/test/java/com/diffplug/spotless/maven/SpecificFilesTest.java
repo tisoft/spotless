@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class SpecificFilesTest extends MavenIntegrationTest {
+public class SpecificFilesTest extends MavenIntegrationHarness {
 	private String testFile(int number, boolean absolute) throws IOException {
 		String rel = "src/main/java/test" + number + ".java";
 		if (absolute) {

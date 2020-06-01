@@ -17,9 +17,9 @@ package com.diffplug.spotless.maven.scala;
 
 import org.junit.Test;
 
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 
-public class ScalafmtTest extends MavenIntegrationTest {
+public class ScalafmtTest extends MavenIntegrationHarness {
 	@Test
 	public void testScalafmtWithDefaultConfig() throws Exception {
 		writePomWithScalaSteps("<scalafmt/>");

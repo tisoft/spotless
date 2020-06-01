@@ -17,9 +17,9 @@ package com.diffplug.spotless.maven.kotlin;
 
 import org.junit.Test;
 
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 
-public class KtlintTest extends MavenIntegrationTest {
+public class KtlintTest extends MavenIntegrationHarness {
 	@Test
 	public void testKtlint() throws Exception {
 		writePomWithKotlinSteps("<ktlint/>");

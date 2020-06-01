@@ -17,9 +17,9 @@ package com.diffplug.spotless.maven.java;
 
 import org.junit.Test;
 
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 
-public class ImportOrderTest extends MavenIntegrationTest {
+public class ImportOrderTest extends MavenIntegrationHarness {
 	@Test
 	public void file() throws Exception {
 		setFile("import.properties").toResource("java/importsorter/import.properties");

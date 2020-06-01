@@ -17,9 +17,9 @@ package com.diffplug.spotless.maven.generic;
 
 import org.junit.Test;
 
-import com.diffplug.spotless.maven.MavenIntegrationTest;
+import com.diffplug.spotless.maven.MavenIntegrationHarness;
 
-public class TrimTrailingWhitespaceTest extends MavenIntegrationTest {
+public class TrimTrailingWhitespaceTest extends MavenIntegrationHarness {
 
 	@Test
 	public void fromContentToTabs() throws Exception {
