@@ -104,7 +104,7 @@ public class SpotlessTask extends DefaultTask {
 
 	@Deprecated
 	public void setPaddedCell(boolean paddedCell) {
-		getLogger().warn("PaddedCell is now always on, and cannot be turned off.");
+		getLogger().warn("Spotless warning: Padded Cell is now always on, and cannot be turned off.  Find `paddedCell(` and remove all invocations.");
 	}
 
 	protected String filePatterns = "";
