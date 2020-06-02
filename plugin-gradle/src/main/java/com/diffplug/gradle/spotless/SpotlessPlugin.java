@@ -50,10 +50,10 @@ public class SpotlessPlugin implements Plugin<Project> {
 			// getTasks() returns a "live" collection, so this works even if the
 			// task doesn't exist at the time this call is made
 			if (spotlessExtension.enforceCheck) {
-				if (GradleVersion.current().compareTo(SpotlessPluginLegacy.CONFIG_AVOIDANCE_INTRODUCED) >= 0) {
-					SpotlessPluginConfigAvoidance.enforceCheck(spotlessExtension, project);
+				if (GradleVersion.current().compareTo(SpotlessPluginPreConfigAvoidance.CONFIG_AVOIDANCE_INTRODUCED) >= 0) {
+					SpotlessPluginPostConfigAvoidance.enforceCheck(spotlessExtension, project);
 				} else {
-					SpotlessPluginLegacy.enforceCheck(spotlessExtension, project);
+					SpotlessPluginPreConfigAvoidance.enforceCheck(spotlessExtension, project);
 				}
 			}
 		});

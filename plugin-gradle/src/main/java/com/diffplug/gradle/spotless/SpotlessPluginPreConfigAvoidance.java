@@ -20,7 +20,7 @@ import org.gradle.api.Task;
 import org.gradle.api.plugins.JavaBasePlugin;
 import org.gradle.util.GradleVersion;
 
-class SpotlessPluginLegacy {
+class SpotlessPluginPreConfigAvoidance {
 	static final GradleVersion CONFIG_AVOIDANCE_INTRODUCED = GradleVersion.version("4.9");
 
 	static void enforceCheck(SpotlessExtension extension, Project project) {

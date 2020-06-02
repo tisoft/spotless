@@ -20,7 +20,7 @@ import org.gradle.api.Task;
 import org.gradle.api.plugins.JavaBasePlugin;
 import org.gradle.api.tasks.TaskProvider;
 
-class SpotlessPluginConfigAvoidance {
+class SpotlessPluginPostConfigAvoidance {
 	static void enforceCheck(SpotlessExtension extension, Project project) {
 		TaskProvider<Task> check = project.getTasks().named(JavaBasePlugin.CHECK_TASK_NAME);
 		check.configure(task -> task.dependsOn(extension.rootCheckTask));
